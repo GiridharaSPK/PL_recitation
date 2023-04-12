@@ -15,7 +15,6 @@ int CoolClass::Calc(int a, int b)
     {
         return 2 * a;
     }
-    compile time error
     else
     {
         return a + b;
