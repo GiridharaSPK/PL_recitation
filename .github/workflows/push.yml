@@ -3,8 +3,8 @@ name: MSBuild
 on:
   push:
     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+  #pull_request:
+  # branches: [ master ]
 
 env:
   # Path to the solution file relative to the root of the project.
@@ -35,12 +35,11 @@ jobs:
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
       
       
-lint:
-  
-  runs-on: windows-latest
-  
-  steps:
-  - name: RunLint
-  working-directory: ${{env.GITHUB_WORKSPACE}}
-  run: echo LINT
-
+  lint:
+    
+    runs-on: windows-latest
+    
+    steps:
+    - name: RunLint
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: echo LINT
