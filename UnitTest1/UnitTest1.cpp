@@ -24,7 +24,7 @@ namespace UnitTest1
 			Assert::AreEqual(5, coolClass.Calc(3, 2));
 		}
 		
-		TEST_METHOD_WRONG(TestMethod3)
+		TEST_METHOD(TestMethod3)
 		{
 			CoolClass coolClass;
 			Assert::AreEqual(7, coolClass.Calc(3, 3));
