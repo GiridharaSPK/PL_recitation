@@ -23,5 +23,12 @@ namespace UnitTest1
 			CoolClass coolClass;
 			Assert::AreEqual(5, coolClass.Calc(3, 2));
 		}
+		
+		TEST_MAX_INT_SUME(TestMethod3)
+		{
+			CoolClass coolClass;
+			Assert::AreEqual(INT_MAX, coolClass.Calc(2*INT_MAX, -1 * INT_MAX));
+		}
+		
 	};
 }
