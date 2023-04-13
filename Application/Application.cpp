@@ -9,6 +9,7 @@ CoolClass::CoolClass(void)
 {
 }
 
+//cool class to add integers
 int CoolClass::Calc(int a, int b)
 {
     if (a == b)
